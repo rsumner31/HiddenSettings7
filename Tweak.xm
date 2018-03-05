@@ -206,6 +206,11 @@
 	return YES;
 }
 
+- (BOOL)enabledForOrientation:(int)orientation {
+	// XXX if landscape, disable
+	return %orig;
+}
+
 %end
 
 
